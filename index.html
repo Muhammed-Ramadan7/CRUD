@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRUD-System</title>
+    <link rel="icon" href="img/m.logo.png">
+</head>
+<body class="bg-dark">
+    <!-- CRUD -->
+<div class="container mt-5 shadow-lg  p-3">
+    <h2 class="text-center  mb-5 fs-1 fw-bold text-info "> CRUD SYSTEM</h2>
+    <div class="form-floating mb-3 "> 
+        <input type="text" class=" form-control bg-secondary-subtle" id="PName" placeholder="Name">
+        <div class="alert d-none alert-danger mt-2 p-1">
+            <p>product name must start with uppercase</p>
+        </div>
+        <label for="floatingtext">productName</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input  type="number" class="form-control bg-secondary-subtle" id="productNumber" placeholder="number">
+        <div class="alert d-none alert-danger mt-2 p-1">
+            <p>the Price must consists of 3 and not exeed 7 numbers</p>
+        </div>
+        <label for="productNumber">ProductPrice</label>
+    </div>
+    <div class="form-floating">
+        <input  type="text" class="form-control bg-secondary-subtle" id="category" placeholder="tv">
+        <div class="alert d-none alert-danger mt-2 p-1">
+            <p>categories are (Mobile|| tv|| screen) only </p>
+        </div>
+        <label for="category">productCategory</label>
+    </div>
+    <textarea  name="" id="mo" class="form-control my-3 bg-secondary-subtle" placeholder="Description"></textarea>
+        <div class="alert d-none alert-danger mt-2 p-1">
+            <p>The Massage must exeed 5 character</p>
+        </div>
+        <div class="form-floating">
+            <input   type="text" class="form-control bg-secondary-subtle my-3 " id="searchProduct" placeholder="tv">
+            <label for="searchProduct">SearchByName</label>
+        </div>
+        <button id="addbtn"  class="btn btn-outline-info"> Add Product</button>
+        <button id="updatebtn"  class=" d-none btn  btn-outline-danger">updateproduct</button>
+</div>
+
+<!-- CARTONA -->
+<div class="container my-5 ">
+    <div id="row" class="row g-4">
+    </div>
+</div>
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
